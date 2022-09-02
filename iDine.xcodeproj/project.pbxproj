@@ -21,6 +21,7 @@
 		E3885DAB28BE577000A0D04A /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3885DAA28BE577000A0D04A /* ItemRow.swift */; };
 		E3B67E2828BFAC1A00ACAFD3 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B67E2728BFAC1A00ACAFD3 /* ItemDetail.swift */; };
 		E3C77D7728C24C1900BB55EF /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C77D7628C24C1900BB55EF /* OrderView.swift */; };
+		E3C77D7928C24D8E00BB55EF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C77D7828C24D8E00BB55EF /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		E3885DAA28BE577000A0D04A /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		E3B67E2728BFAC1A00ACAFD3 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		E3C77D7628C24C1900BB55EF /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		E3C77D7828C24D8E00BB55EF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				E3885D7828B914E300A0D04A /* iDineApp.swift */,
 				E3885D7A28B914E300A0D04A /* ContentView.swift */,
+				E3C77D7828C24D8E00BB55EF /* MainView.swift */,
 				E3885DAA28BE577000A0D04A /* ItemRow.swift */,
 				E3B67E2728BFAC1A00ACAFD3 /* ItemDetail.swift */,
 				E3C77D7628C24C1900BB55EF /* OrderView.swift */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3B67E2828BFAC1A00ACAFD3 /* ItemDetail.swift in Sources */,
+				E3C77D7928C24D8E00BB55EF /* MainView.swift in Sources */,
 				E3C77D7728C24C1900BB55EF /* OrderView.swift in Sources */,
 				E3885D7B28B914E300A0D04A /* ContentView.swift in Sources */,
 				E3885D7928B914E300A0D04A /* iDineApp.swift in Sources */,
