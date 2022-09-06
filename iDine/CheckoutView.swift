@@ -15,6 +15,7 @@ struct CheckoutView: View {
     @State private var addLoyaltyDetails = false
     @State private var loyaltyNumber = ""
     @State private var tipAmount = 15
+    @State private var showingPaymentAlert = false
     var body: some View {
         Form {
             Section {
@@ -40,12 +41,15 @@ struct CheckoutView: View {
                 Text("TOTAL: \(totalPrice)")
             ) {
                 Button("Confirm order") {
-                    // place the order
+                    showingPaymentAlert.toggle()
                 }
             }
         }
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
+        .alert(isPresented: $showingPaymentAlert) {
+            Alert(title: Text("Order confirmed"), message: Text("Your total was \(totalPrice) – Thank You!"), dismissButton: .default(Text("OK")))
+        }
     }
     var totalPrice: String {
         let formatter = NumberFormatter()
