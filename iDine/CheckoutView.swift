@@ -16,6 +16,10 @@ struct CheckoutView: View {
     @State private var loyaltyNumber = ""
     @State private var tipAmount = 15
     @State private var showingPaymentAlert = false
+    
+    //variables for pickup time
+    let pickupTimes = ["Now", "Tonight", "Tommorow Morning"]
+    @State private var pickupTime = "Now"
     var body: some View {
         Form {
             Section {
@@ -28,6 +32,15 @@ struct CheckoutView: View {
                 if addLoyaltyDetails {
                     TextField("Enter your iDine ID", text: $loyaltyNumber)
                 }
+            }
+            //added pick up time
+            Section(header: Text("Pick Up Time")) {
+                Picker("Time:", selection: $pickupTime) {
+                    ForEach(pickupTimes, id: \.self) {
+                        Text("\($0)")
+                    }
+                }
+                .pickerStyle(.menu)
             }
             Section(header: Text("Add a tip?")) {
                 Picker("Percentage:", selection: $tipAmount) {

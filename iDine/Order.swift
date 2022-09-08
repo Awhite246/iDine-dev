@@ -28,4 +28,14 @@ class Order: ObservableObject {
             items.remove(at: index)
         }
     }
+    //added function that returns amount of items orded currently with name
+    func itemAmount(name: String) -> Int {
+        var out = 0
+        for item in items {
+            if item.name == name {
+                out += 1
+            }
+        }
+        return out
+    }
 }

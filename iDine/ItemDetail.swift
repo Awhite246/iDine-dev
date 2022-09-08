@@ -29,7 +29,12 @@ struct ItemDetail: View {
             Button("Order This") {
                 order.add(item: item)
             }
+            .padding()
             .font(.headline)
+            //number describing how many items ordered
+            Text("Current Amount: \(order.itemAmount(name: item.name))")
+                .font(.caption)
+                
         }
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)

@@ -14,16 +14,6 @@ struct OrderView : View {
         NavigationView {
             List {
                 Section {
-                    ForEach(order.items) { item in
-                        HStack {
-                            Text(item.name)
-                            Spacer()
-                            Text("$\(item.price)")
-                        }
-                    }
-                }
-
-                Section {
                     NavigationLink(destination: CheckoutView()){
                         Text("Place Order")
                         
